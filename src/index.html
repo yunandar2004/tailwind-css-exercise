@@ -14,7 +14,7 @@
     <header>
       <div class="bg-[#d9e8ef]">
         <nav class="py-2 shadow-md">
-          <div class="max-w-6xl m-auto flex items-center">
+          <div class="flex items-center max-w-6xl mx-11">
             <div class="w-1/2">
               <ul class="flex space-x-5 items-center">
                 <li class="flex space-x-2">
@@ -24,23 +24,35 @@
               </ul>
             </div>
             <div class="flex ms-auto">
-              <ul class="flex space-x-6 font-medium text-sm items-center">
+              <ul
+                class="lg:flex space-x-6 font-medium text-sm items-center hidden"
+              >
                 <li>About us</li>
                 <li>Services</li>
                 <li>Portfolio</li>
                 <li>Awards</li>
-                <li
+                <!-- <li
                   class="bg-[#7c3aed] hover:bg-[9780bf] text-white py-2 px-5 rounded-md"
                 >
                   Contact
-                </li>
+                </li> -->
               </ul>
+              <div
+                class="bg-[#7c3aed] hover:bg-[9780bf] text-sm text-white py-2 px-5 rounded-md ms-6 md:block hidden"
+              >
+                Contact
+              </div>
+              <div class="ms-6 my-auto lg:hidden block">
+                <i class="fa-solid fa-bars"></i>
+              </div>
             </div>
           </div>
         </nav>
-        <div class="flex mt-11">
-          <div class="w-1/2 max-w-6xl m-auto space-y-5">
-            <h2 class="text-6xl font-semibold">Work Space that inspire you</h2>
+        <div class="md:flex mt-11">
+          <div class="ms-11 w-1/2 my-auto space-y-5">
+            <h2 class="lg:text-6xl md:text-5xl text-4xl font-semibold">
+              Work Space that inspire you
+            </h2>
             <p>
               We help you building the dreams and bring more than that you
               expect
@@ -59,7 +71,7 @@
               <!-- <div class="border-b-4 border-[#bd9cf6] w-20"> </div>  -->
             </div>
           </div>
-          <div class="ms-auto">
+          <div class="ms-auto flex flex-wrap justify-end">
             <img class="h-[520px]" src="../images/building1.png" alt="" />
           </div>
         </div>
@@ -68,26 +80,32 @@
 
     <main class="max-w-6xl m-auto">
       <section class="my-12">
-        <div class="p-8 flex space-x-32">
-          <div class="border-l-4 border-[#bd9cf6]">
+        <div class="p-8 md:flex flex-wrap">
+          <div class="border-l-4 border-[#bd9cf6] lg:w-1/4 md:w-2/4">
             <div class="py-1 ps-4">
               <p class="text-3xl font-semibold">850</p>
               <p class="text-sm text-slate-600">Building construed</p>
             </div>
           </div>
-          <div class="border-l-4 border-[#bd9cf6]">
+          <div
+            class="border-l-4 border-[#bd9cf6] lg:w-1/4 md:w-2/4 lg:mt-0 md:mt-0 mt-7"
+          >
             <div class="py-1 ps-4">
               <p class="text-3xl font-semibold">578</p>
               <p class="text-sm text-slate-600">Homes sold</p>
             </div>
           </div>
-          <div class="border-l-4 border-[#bd9cf6]">
+          <div
+            class="border-l-4 border-[#bd9cf6] lg:w-1/4 md:w-2/4 lg:mt-0 mt-7"
+          >
             <div class="py-1 ps-4">
               <p class="text-3xl font-semibold">97</p>
               <p class="text-sm text-slate-600">Dedicated Members</p>
             </div>
           </div>
-          <div class="border-l-4 border-[#bd9cf6]">
+          <div
+            class="border-l-4 border-[#bd9cf6] lg:w-1/4 md:w-2/4 lg:mt-0 mt-7"
+          >
             <div class="py-1 ps-4">
               <p class="text-3xl font-semibold">24</p>
               <p class="text-sm text-slate-600">Awards Won</p>
@@ -97,12 +115,16 @@
       </section>
 
       <section>
-        <div class="space-y-12">
-          <div><p class="text-5xl font-bold">Solutions for your dream</p></div>
+        <div class="space-y-12 mx-9">
+          <div>
+            <p class="md:text-5xl text-4xl font-bold">
+              Solutions for your dream
+            </p>
+          </div>
           <div>
             <div>
-              <ul class="flex space-x-5">
-                <li class="space-y-3 w-1/3">
+              <ul class="lg:flex lg:space-x-5">
+                <li class="space-y-3 lg:w-1/3">
                   <img src="../images/1.png" alt="" />
                   <p class="text-2xl font-semibold">Architecture</p>
                   <p class="text-sm text-slate-700">
@@ -113,7 +135,7 @@
                     <i class="fa-solid fa-arrow-right text-purple-600"></i>
                   </div>
                 </li>
-                <li class="space-y-3 w-1/3">
+                <li class="space-y-3 lg:w-1/3 lg:mt-0 mt-9">
                   <img src="../images/4.png" alt="" />
                   <p class="text-2xl font-semibold">Interior Design</p>
                   <p class="text-sm text-slate-700">
@@ -124,7 +146,7 @@
                     <i class="fa-solid fa-arrow-right text-purple-600"></i>
                   </div>
                 </li>
-                <li class="space-y-3 w-1/3">
+                <li class="space-y-3 lg:w-1/3 lg:mt-0 mt-9">
                   <img src="../images/7.png" alt="" />
                   <p class="text-2xl font-semibold">Real estate</p>
                   <p class="text-sm text-slate-700">
@@ -137,34 +159,53 @@
                 </li>
               </ul>
             </div>
-            <div></div>
-            <div></div>
           </div>
         </div>
       </section>
 
-      <section class="my-28">
+      <section class="my-28 m-auto lg:mx-0 mx-11">
         <div class="space-y-7">
           <div>
             <p class="font-semibold text-md">SELECTED WORKS</p>
           </div>
-          <div class="">
-            <div class="flex gap-4 justify-between">
-              <img src="../images/room1.jpg" alt="" class="w-[360px]" />
-              <img src="../images/room2.jpg" alt="" class="w-[360px]" />
-              <img src="../images/room3.jpg" alt="" class="w-[360px]" />
-            </div>
-            <div class="flex gap-4 justify-between mt-8">
-              <img src="../images/room4.jpg" alt="" class="w-[360px]" />
-              <img src="../images/room5.jpg" alt="" class="w-[360px]" />
-              <img src="../images/room6.jpg" alt="" class="w-[360px]" />
-            </div>
+
+          <div class="flex flex-wrap">
+            <img
+              src="../images/room1.jpg"
+              alt=""
+              class="lg:w-1/3 md:w-1/2 w-full lg:pr-5"
+            />
+            <img
+              src="../images/room2.jpg"
+              alt=""
+              class="lg:w-1/3 md:w-1/2 w-full md:ps-5 md:py-0 py-5 lg:ps-0 lg:py-0"
+            />
+            <img
+              src="../images/room3.jpg"
+              alt=""
+              class="lg:w-1/3 md:w-1/2 w-full lg:ps-5 md:py-5 lg:py-0"
+            />
+            <img
+              src="../images/room4.jpg"
+              alt=""
+              class="lg:w-1/3 md:w-1/2 w-full lg:pr-5 lg:pt-5 md:py-5 md:ps-5 py-5 lg:py-0 lg:ps-0"
+            />
+            <img
+              src="../images/room5.jpg"
+              alt=""
+              class="lg:w-1/3 md:w-1/2 w-full lg:pt-5"
+            />
+            <img
+              src="../images/room6.jpg"
+              alt=""
+              class="lg:w-1/3 md:w-1/2 w-full lg:ps-5 lg:pt-5 md:ps-5 pt-5"
+            />
           </div>
         </div>
       </section>
 
       <section>
-        <div class="space-y-10">
+        <div class="space-y-10 lg:mx-0 mx-11">
           <div>
             <div class="space-y-7">
               <img
@@ -172,14 +213,14 @@
                 alt=""
                 class="w-[30px] block m-auto"
               />
-              <div class="space-y-1">
-                <p class="font-md text-center">
+              <div class="lg:mx-32">
+                <p class="lg:text-2xl md:text-xl text-sm text-center">
                   With the help of Landify I have created a learning page for my
-                  startup.
+                  startup.The UI kit so intuitive and easy to use.
                 </p>
-                <p class="font-md text-center">
+                <!-- <p class="font-md text-center">
                   The UI kit so intuitive and easy to use.
-                </p>
+                </p> -->
               </div>
             </div>
             <div class="flex">
@@ -201,42 +242,46 @@
           </div>
         </div>
       </section>
+    </main>
+    <main>
       <section class="mt-20">
-        <div class="flex">
-          <div>
-            <img src="../images/discussion.webp" alt="" />
+        <div class="flex flex-wrap md:m-0  justify-between">
+          <div class="md:w-1/2 w-full">
+            <img
+              src="../images/discussion.webp"
+              alt=""
+              class="object-cover h-[500px]"
+            />
           </div>
-          <div class="flex m-auto">
+          <div class=" my-auto md:w-1/2 w-full md:mt-0 py-6 md:px-11 md:mx-0 mx-11">
             <div class="space-y-8">
               <div>
-                <p class="text-5xl font-bold">Get in Touch</p>
-                <p class="text-sm text-slate-700">
+                <p class="lg:text-5xl font-bold text-3xl">Get in Touch</p>
+                <p class="md:text-sm text-slate-700 text-xs">
                   Have an enquiry?Fill out of the form to connect our team.
                 </p>
               </div>
               <div class="space-y-5">
-                <div class="flex space-x-7">
-                  <div class="space-y-2">
+                <div class="flex lg:space-x-7 space-x-3">
+                  <div class="w-1/2 space-y-2">
                     <p class="text-xs">First Name</p>
-                    <p class="w-[190px] px-5 py-3 border-2 rounded-md"></p>
+                    <p class="px-5 py-3 border-2 rounded-md"></p>
                   </div>
-                  <div class="space-y-2">
+                  <div class="w-1/2 space-y-2">
                     <p class="text-xs">Last Name</p>
-                    <p class="w-[190px] px-5 py-3 border-2 rounded-md"></p>
+                    <p class="px-5 py-3 border-2 rounded-md"></p>
                   </div>
                 </div>
-                <div class="space-y-2">
+                <div class="w-full space-y-2">
                   <p class="text-xs">Email Address</p>
-                  <p class="w-[400px] px-5 py-3 border-2 rounded-md"></p>
+                  <p class="px-5 py-3 border-2 rounded-md"></p>
                 </div>
-                <div class="space-y-2">
+                <div class="w-full space-y-2">
                   <p class="text-xs">Message</p>
-                  <p
-                    class="w-[400px] px-5 py-3 border-2 rounded-md h-[70px]"
-                  ></p>
+                  <p class="px-5 py-3 border-2 rounded-md h-[70px]"></p>
                 </div>
                 <button
-                  class="bg-[#7c3aed] hover:bg-[9780bf] text-white py-2 px-5 rounded-md"
+                  class="bg-[#7c3aed] hover:bg-[9780bf] text-white py-2 px-5 rounded-md md:text-sm text-xs"
                 >
                   Send Message
                 </button>
@@ -246,8 +291,9 @@
         </div>
       </section>
     </main>
+
     <footer class="bg-slate-950">
-      <div class="max-w-6xl mx-auto">
+      <div class="max-w-6xl mx-auto mx-11">
         <div class="border-b-2 border-slate-800 text-white py-8">
           <ul class="flex-col mx-auto space-y-7">
             <li class="">
@@ -259,26 +305,28 @@
               </ul>
             </li>
             <li class="">
-              <ul class="space-x-3 flex w-[400px] mx-auto">
-                <li>About</li>
-                <li>Services</li>
-                <li>Awards</li>
-                <li>News</li>
-                <li>Blog</li>
-                <li>Contact</li>
+              <ul class="space-x-3 flex flex-wrap justify-center">
+                <li class="md:w-1/7">About</li>
+                <li class="md:w-1/7">Services</li>
+                <li class="md:w-1/7">Awards</li>
+                <li class="md:w-1/7">News</li>
+                <li class="md:w-1/7">Blog</li>
+                <li class="md:w-1/7">Contact</li>
               </ul>
             </li>
           </ul>
         </div>
-        <div class="flex justify-between mt-2">
-          <div class="text-white">
+        <div class="flex flex-wrap justify-between mt-2 lg:ms-0">
+          <div class="text-white md:w-1/2 w-full md:text-start text-center">
             <p>© 2021 Landify UI Kit. All rights reserved</p>
           </div>
-          <div class="flex space-x-4 text-white">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-staylinked"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
+          <div class="md:w-1/2 w-full ">
+            <div class="space-x-4 text-white flex justify-center md:justify-end py-5 md:py-0">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-staylinked"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
           </div>
         </div>
       </div>
